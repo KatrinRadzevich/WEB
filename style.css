@@ -1,0 +1,23 @@
+h1 {
+    color: aqua;
+}
+.zone1 {
+    width: 45%;
+    height: 15%;
+    margin-right: 50%;
+}
+.zone2 {
+    width: 45%;
+    height: 15%;
+    margin-left: 50%;
+}
+a {
+    color: rgb(251, 255, 21);
+}
+html {
+    background-color: rgb(167, 151, 236);
+}
+body {
+    font-family: 'Bradley Hand', cursive;
+}
+
