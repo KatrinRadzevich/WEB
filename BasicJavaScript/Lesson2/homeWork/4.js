@@ -23,4 +23,20 @@
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const number = +prompt(
+  "Введите целое положительное число в диапазоне от 10 до 9999 (включая оба числа)"
+);
+if (Number.isNaN(number)) {
+  console.log("Вы ввели не число");
+} else if (number % 1 !== 0) {
+  console.log("Вы ввели не целое число");
+} else if (number < 10 || number > 9999) {
+  console.log("Ваше число вне допустимого диапазона");
+} else {
+  const units = number % 10;
+  const tens = Math.trunc(number / 10) % 10;
+  const hundreds = Math.trunc(number / 100) % 10;
+  console.log(
+    `В числе ${number} количество сотен: ${hundreds}, десятков: ${tens}, единиц: ${units}`
+  );
+}
