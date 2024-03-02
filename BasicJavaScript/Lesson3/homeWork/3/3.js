@@ -10,4 +10,21 @@
 три числа. Проверять их не нужно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const numberOne = prompt("Введите первое число");
+const numberTwo = prompt("Введите второе число");
+const numberThree = prompt("Введите третье число");
+
+/**
+ * Выводит в диалоговое окно наибольшее из 3-х чисел
+ * @param {number} numOne
+ * @param {number} numTwo
+ * @param {number} numThree
+ */
+function maxNumber(numOne, numTwo, numThree) {
+  const maxNumber = Math.max(numOne, numTwo, numThree);
+  alert(
+    `Максимальное значение среди чисел ${numOne}, ${numTwo}, ${numThree} равно ${maxNumber}`
+  );
+}
+
+maxNumber(numberOne, numberTwo, numberThree);

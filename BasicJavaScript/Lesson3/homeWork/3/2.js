@@ -9,4 +9,19 @@
 сообщение "Размер заработной платы за вычетом налогов равен N."
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const salaryBeforeTaxes = +prompt("Сколько вы зарабатываете?");
+
+/**
+ * Выводит в консоль размер зп после вычета налога
+ * @param {number} number
+ */
+function salaryAfterTaxes(number) {
+  number = number - number * 0.13;
+  console.log(`Размер заработной платы за вычетом налогов равен ${number}.`);
+}
+
+if (!Number.isFinite(salaryBeforeTaxes)) {
+  console.log("Значение задано неверно");
+} else {
+  salaryAfterTaxes(salaryBeforeTaxes);
+}
