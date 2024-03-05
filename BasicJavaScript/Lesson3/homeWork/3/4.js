@@ -18,4 +18,52 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+/**
+ * Сумма двух чисел
+ * @param {number} numOne
+ * @param {number} numTwo
+ * @returns результат суммы двух чисел
+ */
+function sum(numOne, numTwo) {
+  return numOne + numTwo;
+}
+
+/**
+ * Разность двух чисел(из бОльшего меньшее)
+ * @param {number} numOne
+ * @param {number} numTwo
+ * @returns результат разности двух чисел
+ */
+
+function difference(numOne, numTwo) {
+  if (numOne > numTwo) {
+    return numOne - numTwo;
+  } else {
+    return numTwo - numOne;
+  }
+}
+
+/**
+ * Умножение двух чисел
+ * @param {number} numOne
+ * @param {number} numTwo
+ * @returns результат умножения двух чисел
+ */
+function multiplication(numOne, numTwo) {
+  return numOne * numTwo;
+}
+
+/**
+ * Деление двух чисел
+ * @param {number} numOne
+ * @param {number} numTwo
+ * @returns результат деления двух чисел
+ */
+function division(numOne, numTwo) {
+  return numOne / numTwo;
+}
+
+console.log(sum(5, 2));
+console.log(difference(20, 20));
+console.log(multiplication(3, 2));
+console.log(division(3, 2));
