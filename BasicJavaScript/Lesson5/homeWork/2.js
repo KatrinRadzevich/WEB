@@ -30,4 +30,14 @@ const post = {
   ],
 };
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+console.log(post.author);
+
+const array = post.comments;
+for (let i = 0; i < array.length; i++) {
+  if (i === 0) {
+    console.log(array[i].rating.dislikes);
+  } else {
+    console.log(array[i].userId);
+    console.log(array[i].text);
+  }
+}
