@@ -5,7 +5,7 @@
         "color": "Red",
         "size": "XL",
         "quantity": 2,
-        "img": "./pic1.png"
+        "img": "./pic1.jpg"
     
     },
     {
@@ -14,7 +14,7 @@
         "color": "Black",
         "size": "XL",
         "quantity": 1,
-        "img": "./pic2.png"
+        "img": "./pic2.jpg"
     },
     {
         "header": "ELLERY X M'O CAPSULE",
@@ -22,6 +22,6 @@
         "color": "Black",
         "size": "XL",
         "quantity": 1,
-        "img": "./pic2.png"
+        "img": "./pic2.jpg"
     }
 ]
